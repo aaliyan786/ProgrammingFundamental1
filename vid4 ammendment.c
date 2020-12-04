@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<conio.h>
+
 void main()
 {
-	FILE *fp;
 	char ch[100];
-	fp = fopen("file.txt","w");
+	FILE *fp;
+	fp = fopen("file.txt","a");
 	if(fp == NULL)
 	{
 		printf("cannot open file");
